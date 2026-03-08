@@ -1,49 +1,45 @@
-# DemoWebShop Automation Testing
+# Demo Web Shop Automation
 
-## 🧠 Project Overview
+## Project Overview
+This project demonstrates automated testing of the Demo Web Shop e-commerce application using Selenium WebDriver. The framework automates key user workflows such as login, product selection, and cart management.
 
-This project contains automated test scripts for the **Demo Web Shop** e-commerce application.
+The project follows the Page Object Model (POM) design pattern to improve code maintainability and reusability.
 
-The goal is to validate core functionalities of the system using **Selenium WebDriver** and Java, ensuring key user flows work correctly.
+## Tools and Technologies
+- Java
+- Selenium WebDriver
+- TestNG
+- Page Object Model (POM)
+- Maven
 
-This repository demonstrates practical automation skills that are relevant for entry-level QA and automation tester roles.
+## Test Scenarios Automated
+- User Login
+- Product Search
+- Add Product to Cart
+- Remove Product from Cart
+- Logout
 
----
+## Framework Design
+The framework is designed using the Page Object Model (POM) where:
+- Each page has its own class
+- Locators and actions are separated from test logic
+- Test classes interact with page classes to execute test scenarios
 
-## 🧰 Technology Stack
+## Synchronization
+Explicit waits are used to handle synchronization issues and ensure elements are visible or clickable before performing actions.
 
-| Component | Technology |
-|-----------|------------|
-| Automation | Selenium WebDriver |
-| Language | Java |
-| Build Tool | Maven |
-| Test Framework | TestNG |
-| Browser | Chrome |
-| IDE | Eclipse |
+## Project Structure
+src
+├── pages
+├── tests
+├── utilities
 
----
 
-## 🚀 Features Covered
+## How to Run the Tests
+1. Clone the repository
+2. Open the project in an IDE (Eclipse / IntelliJ)
+3. Install dependencies using Maven
+4. Run the TestNG test suite
 
-The automation suite covers the following user flows:
-
-### ✅ Core Functionalities
-
-1. **Login**
-2. **Product Search & Selection**
-3. **Add to Cart**
-4. **Checkout Process**
-5. **Logout**
-
-> Each of these flows is automated end-to-end using Selenium scripts.
-
----
-
-## 📁 Project Structure
-DemoWebShop-Automation/
-├── src/
-│ ├── main/java/
-│ └── test/java/
-├── drivers/ # Browser drivers (if included)
-├── pom.xml
-└── README.md
+## Author
+Jorden
